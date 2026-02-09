@@ -8,31 +8,37 @@ import sys
 import argparse
 
 
-def fast_forward_bypass(target, method="default"):
+def fast_forward_bypass(target, method="default", verbose=False):
     """
     Perform a fast-forward bypass operation on the target.
     
     Args:
-        target: The target to bypass
-        method: The bypass method to use (default, aggressive, stealth)
+        target (str): The target to bypass
+        method (str): The bypass method to use (default, aggressive, stealth)
+        verbose (bool): Enable verbose output
     
     Returns:
         bool: True if bypass successful, False otherwise
     """
-    print(f"[*] Initiating FF bypass on target: {target}")
-    print(f"[*] Using method: {method}")
+    if verbose:
+        print(f"[*] Initiating FF bypass on target: {target}")
+        print(f"[*] Using method: {method}")
     
     if method == "default":
-        print("[+] Applying default bypass...")
+        if verbose:
+            print("[+] Applying default bypass...")
     elif method == "aggressive":
-        print("[+] Applying aggressive bypass...")
+        if verbose:
+            print("[+] Applying aggressive bypass...")
     elif method == "stealth":
-        print("[+] Applying stealth bypass...")
+        if verbose:
+            print("[+] Applying stealth bypass...")
     else:
         print(f"[-] Unknown method: {method}")
         return False
     
-    print("[+] Bypass successful!")
+    if verbose:
+        print("[+] Bypass successful!")
     return True
 
 
@@ -73,7 +79,7 @@ Examples:
         print(f"[DEBUG] Target: {args.target}")
         print(f"[DEBUG] Method: {args.method}")
     
-    success = fast_forward_bypass(args.target, args.method)
+    success = fast_forward_bypass(args.target, args.method, args.verbose)
     
     sys.exit(0 if success else 1)
 
