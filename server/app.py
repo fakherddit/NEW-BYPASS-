@@ -234,7 +234,7 @@ def validate_key():
         )
     except Exception as e:
         print(f"[ERROR] Validation failed: {str(e)}")
-        return jsonify({"valid": False, "message": "Server error"}), 500
+        return jsonify({"valid": False, "message": f"Server error: {str(e)}"}), 500
     finally:
         if conn:
             return_db_connection(conn)
