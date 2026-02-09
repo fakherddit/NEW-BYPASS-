@@ -77,12 +77,19 @@ def return_db_connection(conn):
 
 
 def get_status(conn, key):
-    with conn.cursor() as cur:
-        cur.execute("SELECT value FROM server_settings WHERE key = %s LIMIT 1", (key,))
-        row = cur.fetchone()
-    if not row:
-        return True
-    return str(row[0]) == "1"
+    try:
+        with conn.cursor() as cur:
+            cur.execute("SELECT value FROM server_settings WHERE key = %s LIMIT 1", (key,))
+            row = cur.fetchone()
+        if not row:
+            return True
+        # Handle both tuple (default) and dict (if factory persisted)
+        if isinstance(row, dict):
+            return str(row.get('value')) == "1"
+        return str(row[0]) == "1"
+    except Exception as e:
+        print(f"[WARN] get_status failed for {key}: {e}")
+        return True  # Default to open if check fails
 
 
 @app.before_request
