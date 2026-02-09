@@ -1,0 +1,15 @@
+#pragma once
+#include <iostream>
+#include <string>
+#include <vector>
+#include "Includes.h"
+
+// Minimal stub - all features disabled for ultra-stable build
+namespace GameSDK {
+    inline void ProcessAimbot(float x, float y) { return; }
+    inline void get_players() { return; }
+    inline void aimbot(bool enable) { return; }
+    inline void wallhack(bool enable) { return; }
+    inline void speedhack(float multiplier) { return; }
+    inline void init() { return; }
+}

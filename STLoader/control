@@ -1,0 +1,9 @@
+Package: com.yourname.stloader
+Name: ST Loader
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Loader for SAVAGEXITER
+Maintainer: You
+Author: You
+Section: Utilities
+Depends: firmware (>= 14.0)

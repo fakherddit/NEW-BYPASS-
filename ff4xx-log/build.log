@@ -1,0 +1,16 @@
+[1;31m> [1;3;39mMaking all for tweak @SAVAGEXITER…[m
+[0;32m==> [1;39mCompiling IMGUI/imgui_demo.cpp (arm64)…[m
+[0;32m==> [1;39mCompiling IMGUI/imgui_draw.cpp (arm64)…[m
+[0;32m==> [1;39mCompiling IMGUI/imgui_tables.cpp (arm64)…[m
+[0;32m==> [1;39mCompiling IMGUI/imgui_impl_metal.mm (arm64)…[m
+[0;32m==> [1;39mCompiling hook/hook.c (arm64)…[m
+[0;32m==> [1;39mCompiling hook/mach_excServer.c (arm64)…[m
+[0;32m==> [1;39mCompiling IMGUI/imgui.cpp (arm64)…[m
+[0;32m==> [1;39mCompiling IMGUI/imgui_widgets.cpp (arm64)…[m
+[0;32m==> [1;39mCompiling savagexiter.mm (arm64)…[m
+[0;33m==> [1;39mLinking tweak @SAVAGEXITER (arm64)…[m
+clang-11: [0;1;31merror: [0mno such file or directory: '/mnt/c/Users/fakherddin/Music/iTunes/ff4xx-log/.theos/obj/arm64/IMGUI/imgui.cpp.5c429d42.o'[0m
+make[3]: *** [/home/fakherddin/theos/makefiles/instance/library.mk:52: /mnt/c/Users/fakherddin/Music/iTunes/ff4xx-log/.theos/obj/arm64/@SAVAGEXITER.dylib] Error 1
+make[2]: *** [/home/fakherddin/theos/makefiles/instance/library.mk:52: /mnt/c/Users/fakherddin/Music/iTunes/ff4xx-log/.theos/obj/arm64/@SAVAGEXITER.dylib] Error 2
+make[1]: *** [/home/fakherddin/theos/makefiles/instance/library.mk:37: internal-library-all_] Error 2
+make: *** [/home/fakherddin/theos/makefiles/master/rules.mk:146: @SAVAGEXITER.all.tweak.variables] Error 2

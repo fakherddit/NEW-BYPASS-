@@ -1,0 +1,10 @@
+[1;31m> [1;3;39mMaking all for tweak @SAVAGEXITER…[m
+[0;32m==> [1;39mCompiling Esp/DTTJailbreakDetection.m (arm64)…[m
+[0;32m==> [1;39mCompiling Esp/LoadView.mm (arm64)…[m
+[0;32m==> [1;39mCompiling Esp/FTNotificationIndicator.m (arm64)…[m
+[0;32m==> [1;39mCompiling Esp/ImGuiLoad.m (arm64)…[m
+[0;32m==> [1;39mCompiling Esp/JHDragView.m (arm64)…[m
+[0;32m==> [1;39mCompiling Esp/JHUIViewControllerDecoupler.m (arm64)…[m
+[0;32m==> [1;39mCompiling Esp/JHPP.m (arm64)…[m
+[0;32m==> [1;39mCompiling IMGUI/imgui_demo.cpp (arm64)…[m
+[0;32m==> [1;39mCompiling IMGUI/imgui_draw.cpp (arm64)…[m
